@@ -1,9 +1,228 @@
 <!DOCTYPE html>
 <html>
-  <body>
-  
-  <h1>My First Heading</h1>
-  <p>My first paragraph.</p>
-  
-  </body>
+    <head>
+        <link rel="stylesheet" href="style-home.css">
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        <script src="js-home.js"></script>
+        <title>Home Page</title>
+    </head>
+    <body class = "body-background">
+        <header class="nav-div">
+            <div class="nav-div-upper">
+                <h1 class="nav-title flex-center">Portfolio</h1>
+                <h2 class="nav-subtitle flex-center">Lee Jun Jie</h2>
+                <ul class="nav-pages">
+                    <li class="flex-center"><a href="#home">Home</a></li>
+                    <li class="flex-center"><a href="#self-intro">Self Introduction</a></li>
+                    <li class="flex-center"><a href="#project">Projects</a></li>
+                    <li class="flex-center"><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-div-under flex-center displayonHover">
+                <div class="flex-center">
+                    <h1 class="page-title" data-displayonHover="1" id="home">Home</h1>
+                </div>
+            </div>
+            
+        </header>
+
+        <section class="self-intro" id="self-intro">
+            <div class="panel-topdown pic-panel">
+                <img src="mat/person.png">
+            </div>
+            <div class="panel-topdown text-panel">
+                <div>
+                    <h3 class="panel-subtitle">Current Status</h3>
+                    <h1 class="panel-title">Fresh Graduate</h1>
+                </div>
+
+                <div>
+                    <p>
+                        21 years old fresh graduate carrying a Bachelors' Degree of Multimedia Computing. Has experience and skills in programming-related tasks including database communication and website development. Interested in self-improvement on programming skills even further.
+                    </p>
+                </div>
+
+                <div>
+                    <h1 style="padding-bottom: 20px;">Skill Summary</h1>
+                    <table>
+                        <tr>
+                            <th>
+                                Category
+                            </th>
+                            <th>
+                                Skill Level
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                HTML, CSS
+                            </td>
+                            <td>
+                                Basic Frontend Web Development
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                JavaScript, JQuery
+                            </td>
+                            <td>
+                                Basic Backend Web Development
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                C#
+                            </td>
+                            <td>
+                                Basic Application Development
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Godot Engine
+                            </td>
+                            <td>
+                                Indie Game Development
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Graphics Design
+                            </td>
+                            <td>
+                                Basic Graphics Assembly
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Java
+                            </td>
+                            <td>
+                                Basic Application Development
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                PHP
+                            </td>
+                            <td>
+                                Database Communication with XAMPP
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div>
+                    <h1 style="padding-bottom: 20px; margin-top: 50px;">Credentials </h1>
+                    <table>
+                        <tr>
+                            <th>
+                                Category
+                            </th>
+                            <th>
+                                Status
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                Foundation in Business & Information Technology (FBI)
+                            </td>
+                            <td>
+                                Completed
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Bachelors Degree of Multimedia Computing (BMC)
+                            </td>
+                            <td>
+                                Ongoing
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="self-projects" id="project">
+            <h1 class="flex-center-horizontal">Projects</h1>
+            <grid class="self-projects-grid">
+                <div class="panel-topdown project-section">
+                    <div class="project-title">
+                        <h2>Animation Distribution Website</h2>
+                    </div>
+                    <div class="project-detail" style="background-image: url('mat/website.png')">
+                        <p>Website created to allow users to distribute their character animations. Includes an animation and JavaScript game for the assignment.</p>
+                        <div class="project-tags">
+                            <p>Website Development, Animation, Indie Game Development</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel-topdown project-section">
+                    <div class="project-title">
+                        <h2>Godot Game Development</h2>
+                    </div>
+                    <div class="project-detail background-img-fit" style="background-image: url('mat/godot.png')">
+                        <p>Indie game development as a Final Year Project using Godot Engine and C#.</p>
+                        <div class="project-tags">
+                            <p>Indie Game Development</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel-topdown project-section">
+                    <div class="project-title">
+                        <h2>Business Card</h2>
+                    </div>
+                    <div class="project-detail background-img-fit" style="background-image: url('mat/businesscard2.png')">
+                        <p>Business Card made for Liverpool John Moores University as a tasked assignment.</p>
+                        <div class="project-tags">
+                            <p>Graphics Design</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel-topdown project-section">
+                    <div class="project-title">
+                        <h2>Blog Website</h2>
+                    </div>
+                    <div class="project-detail background-img-fit" style="background-image: url('mat/godot.png')">
+                        <p>A blog website was developed for a school assignment, features database communication.</p>
+                        <div class="project-tags">
+                            <p>Website Development</p>
+                        </div>
+                    </div>
+                </div>
+
+            </grid>
+        </section>
+
+        <footer class="panel-end flex-center-horizontal" id="contact">
+            <div class="panel-end-subtitle">
+                <div class="panel-end-hyperlink">
+                    <div class="flex-center panel-end-svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                        </svg>
+                        <span>leejunjie.555@gmail.com</span>
+                    </div>
+                    <div class="flex-center panel-end-svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                            <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                        </svg>
+                        <span>011-57907963</span>
+                    </div>
+                    <div class="flex-center panel-end-svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M16 8a8 8 0 0 1-7.022 7.94l1.902-7.098a3 3 0 0 0 .05-1.492A3 3 0 0 0 10.237 6h5.511A8 8 0 0 1 16 8M0 8a8 8 0 0 0 7.927 8l1.426-5.321a3 3 0 0 1-.723.255 3 3 0 0 1-1.743-.147 3 3 0 0 1-1.043-.7L.633 4.876A8 8 0 0 0 0 8m5.004-.167L1.108 3.936A8.003 8.003 0 0 1 15.418 5H8.066a3 3 0 0 0-1.252.243 2.99 2.99 0 0 0-1.81 2.59M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4"/>
+                        </svg>
+                        <span>https://kallosterone.github.io/portfolio/</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </body>
 </html>
