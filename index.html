@@ -5,16 +5,18 @@
         <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
         <script src="js-home.js"></script>
         <title>Home Page</title>
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-TJDR3TY9J1"></script>
+        <meta name="description" 
+            content="Portfolio for Lee Jun Jie, 
+            an aspiring programmer who is about to graduate from YPC International College 
+            (in collaboration with Liverpool John Moores University)">
+        <meta name="robot"
+            content="index, follow">
+        <meta name="keyword"
+            content="leejunjie, portfolio, linkedin, cv, programmer">
     </head>
-    <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-        
-        gtag('config', 'G-TJDR3TY9J1');
-    </script>
+
+   
+
     <body class = "body-background">
         <header class="nav-div">
             <div class="nav-div-upper">
@@ -157,18 +159,21 @@
         <section class="self-projects" id="project">
             <h1 class="flex-center-horizontal">Projects</h1>
             <grid class="self-projects-grid">
-                <div class="panel-topdown project-section">
-                    <div class="project-title">
-                        <h2>Animation Distribution Website</h2>
-                    </div>
-                    <div class="project-detail" style="background-image: url('mat/website.png')">
-                        <p>Website created to allow users to distribute their character animations. Includes an animation and JavaScript game for the assignment.</p>
-                        <div class="project-tags">
-                            <p>Website Development, Animation, Indie Game Development</p>
+                <a href="./project1.html">
+                    <div class="panel-topdown project-section">
+                        <div class="project-title">
+                            <h2>Animation Distribution Website</h2>
+                        </div>
+                        <div class="project-detail" style="background-image: url('mat/website.png')">
+                            <p>Website created to allow users to distribute their character animations. Includes an animation and JavaScript game for the assignment.</p>
+                            <div class="project-tags">
+                                <p>Website Development, Animation, Indie Game Development</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-
+                </a>
+                
+                <a href="./project2.html">
                 <div class="panel-topdown project-section">
                     <div class="project-title">
                         <h2>Godot Game Development</h2>
@@ -180,7 +185,9 @@
                         </div>
                     </div>
                 </div>
+                </a>
 
+                <a href="./project3.html">
                 <div class="panel-topdown project-section">
                     <div class="project-title">
                         <h2>Business Card</h2>
@@ -192,18 +199,7 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="panel-topdown project-section">
-                    <div class="project-title">
-                        <h2>Blog Website</h2>
-                    </div>
-                    <div class="project-detail background-img-fit" style="background-image: url('mat/godot.png')">
-                        <p>A blog website was developed for a school assignment, features database communication.</p>
-                        <div class="project-tags">
-                            <p>Website Development</p>
-                        </div>
-                    </div>
-                </div>
+                </a>
 
             </grid>
         </section>
